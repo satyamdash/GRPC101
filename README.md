@@ -8,3 +8,5 @@ Implement the logic in golang
 
 
 then try to reuse the same in python/JS
+
+Also make sure to use a make file
