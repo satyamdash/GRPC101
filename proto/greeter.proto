@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package greeter;
+
+option go_package ="./pb";
+
+
+service Greeter{
+    rpc SayHello (HelloRequest) returns (HelloReply);
+    rpc SayNamaste (HelloRequest) returns (HelloReply);
+}
+
+message HelloRequest{
+    string name=1;
+}
+
+message HelloReply{
+    string name=1;
+}
